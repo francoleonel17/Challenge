@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row" style="margin-top: 20px;">
+    <div class="col-sm-4">
+        <div class="form-group form-group-sm">
+            <span>Buscar por</span>
+            <div class="input-group">
+                <select id="select_f" class="form-control input-sm">
+                    <option value="0">- Todos -</option>
+                    <option value="1"> DNI </option>
+                    <option value="2"> LEGAJO </option>                    
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" id="input_t" name="input_t" required />
+                <span class="input-group-btn">
+                    <button class="btn btn-sm btn-success form-control" onclick="Buscar()">Obtener empleados</button>
+                </span>                
+            </div>
+            <label class="label label-danger" id="msjError"></label>
+        </div>
+    </div>
+</div>
+
+<div id="_VpTabla">
+
+</div>
+
+<script src="~/Scripts/Index.js"></script>
+
+

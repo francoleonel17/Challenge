@@ -1,0 +1,85 @@
+﻿@model IEnumerable<DAL.Empleado>
+
+@if (ViewBag.CantReg == 0)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+                <span>No se encontraron empleados</span>
+            </div>            
+        </div>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-responsive table-condensed table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-1 text-center" nowrap>
+                            Legajo
+                        </th>
+                        <th class="col-md-1 text-center" nowrap>
+                            Apellido
+                        </th>
+                        <th class="col-md-1 text-center" nowrap>
+                            Nombre
+                        </th>
+                        <th class="col-md-2 text-center" nowrap>
+                            DNI
+                        </th>
+                        <th class="col-md-2 text-center" nowrap>
+                            Tipo de contrato
+                        </th>
+                        <th class="col-md-2 text-center" nowrap>
+                            Salario
+                        </th>
+                        <th class="col-md-2 text-center" nowrap>
+                            Salario Anual
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {                        
+                        <tr>
+                            <td class="text-center">
+                                @item.Legajo
+                            </td>
+                            <td class="text-center">
+                                @item.Apellido
+                            </td>
+                            <td class="text-center">
+                                @item.Nombre
+                            </td>                            
+                            <td class="text-center">
+                                @item.Dni
+                            </td>                            
+                            <td class="text-center">                             
+
+                                @if (item.IdTipoContrato == 1)
+                                {
+                                    <span>Por hora</span>
+                                }
+                                else
+                                {
+                                    <span>Mensual</span>
+                                }
+                            </td>
+                            <td class="text-center"> 
+                                $ @item.Salario
+                            </td>
+                            <td class="text-center">
+                                $ @item.SalarioAnual
+                            </td>                          
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+

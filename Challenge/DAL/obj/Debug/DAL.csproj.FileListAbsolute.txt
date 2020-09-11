@@ -1,0 +1,12 @@
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\DAL.dll.config
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\DAL.dll
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\DAL.pdb
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\EntityFramework.dll
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\EntityFramework.xml
+D:\Back Toshiba\Challenge\Challenge\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Back Toshiba\Challenge\Challenge\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Back Toshiba\Challenge\Challenge\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Back Toshiba\Challenge\Challenge\DAL\obj\Debug\DAL.dll
+D:\Back Toshiba\Challenge\Challenge\DAL\obj\Debug\DAL.pdb
+D:\Back Toshiba\Challenge\Challenge\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
